@@ -9,7 +9,7 @@ async function bootstrap() {
   app.use(cookieParser());
   app.enableCors({
     origin: (origin, callback) => {
-      const allowedOrigins = ['http://localhost:3000'];
+      const allowedOrigins = ['http://localhost:3000', 'https://react-11-two.vercel.app/login','https://react-11-two.vercel.app'];
       
       if (!origin||allowedOrigins.includes(origin)) {
         callback(null, true); 
